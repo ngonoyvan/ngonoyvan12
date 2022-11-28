@@ -1,0 +1,130 @@
+.navbar-brand {
+    font-weight: bold;
+}
+.carousel-item{
+    height: 80vh;
+}
+.carousel-item img{
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+    box-shadow: 2px 2px 15px;
+    animation: yvan 5s infinite alternate;
+}
+.carousel-caption {
+    height: 50vh;
+}
+.carousel-caption h5 {
+    font-size: 40px;
+    font-weight: 300;
+}
+.carousel-indicators{
+    height: 10vh;
+}
+.bab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+}
+.bab h1 {
+    font-weight: bold;
+}
+.row{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+.row img{
+    box-shadow: 2px 2px 3px #bbb9b9;
+    animation: yvan 5s infinite alternate;
+}
+.cartes {
+    margin: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    padding-bottom: 12px;
+}
+.carte h3{
+    font-size: 17px;
+    font-weight: bold;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.card {
+    margin: -20px;
+    padding: 0;
+}
+.cards .ng:hover{
+   box-shadow: 3px 8px 19px 0px #938e8e;
+}
+.card-img1-top {
+    border-radius: 50%;
+    object-fit: cover;
+    animation: yvan 5s infinite alternate;
+}
+.carte {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    padding-bottom: 12px;
+    height: auto;
+    box-shadow: 5px 20px 20px 4px #a7a2a2;
+}
+@keyframes yvan {
+  0%{
+    filter: brightness(30%);
+    transition: 0.5s;
+  }
+  50%{
+    filter: brightness(60%);
+  }
+  100%{
+    filter: (45%);
+  }
+}
+@media screen and (max-width:750px){
+    .carousel-caption{
+        display: block !important;
+    }
+    .bab {
+        margin: 0;
+        width: 100%;
+    }
+    .cartes {
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        margin:10px auto ;
+    }
+    
+}
+@media only screen and (min-width:750px) and (max-width:1000px) {
+.bab {
+    width: 100%;
+    margin: 0;
+}
+
+.cartes {
+    width: 100%;
+}
+.card{
+    width: 100%;
+    margin:10px auto ;
+}
+
+    
+}
